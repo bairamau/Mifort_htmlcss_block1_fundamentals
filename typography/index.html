@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IP посредством почтовых голубей — Википедия</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-box">
+        <header>
+            <div class="header-nav-top">
+                <div class="account-name">Вы не представились системе</div>
+                <nav class="header-nav-top-personal">
+                    <ul class="horizontal-nav">
+                        <li><a href="#">Обсуждение</a></li>
+                        <li><a href="#">Вклад</a></li>
+                        <li><a href="#">Создать учетную запись</a></li>
+                        <li><a href="#">Войти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-nav-bottom">
+                <nav class="header-nav-bottom-left">
+                    <ul class="tabs">
+                        <li><a href="#">Статья</a></li>
+                        <li><a href="#">Обсуждение</a></li>
+                    </ul>
+                </nav>
+                <nav class="header-nav-bottom-right">
+                    <ul class="tabs">
+                        <li><a href="#">Читать</a></li>
+                        <li><a href="#">Править</a></li>
+                        <li><a href="#">Править код</a></li>
+                        <li><a href="#">История</a></li>
+                    </ul>
+                    <form class="search-form">
+                        <input class="search-input" type="search" placeholder="Искать в Википедии">
+                        <input class="search-submit" type="submit">
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <header>
+                <h1 class="main-heading">IP посредством почтовых голубей</h1>
+                <p>Материал из Википедии — свободной энциклопедии</p>
+                <nav>[ <a title="Править преамбулу" href="#">править</a> |
+                    <a title="Править преамбулу" href="#">править код</a> ]</nav>
+            </header>
+            <article>
+                <p>
+                    <b>IP посредством почтовых голубей</b> ( <a href="#">англ.</a>
+                    IP over Avian Carriers; <a href="#">RFC 1149</a>) —
+                    шуточный <a href="#">RFC</a>, описывающий способ передачи
+                    <a href="#">IP</a>-пакетов с помощью <a href="#">голубей</a>.
+                    Опубликован
+                    <a href="#"><time datetime="1990-04-01">1 апреля 1990</time></a>
+                    организацией
+                    <a href="#">Internet Engineering Task Force</a>.
+                    Написан Д. Вейтцманом (Waitzman),
+                    как один из <a href="#">первоапрельских RFC</a>.
+                    Вейтцман расширил протокол
+                    <a href="#"><time datetime="1999-04-01">1 апреля 1999</time></a>
+                    в <a href="#">RFC 2549</a> «IP посредством
+                    почтовых голубей с <a href="#">QoS</a>». В 2011 вышел
+                    <a href="#">RFC 6214</a>, содержащий адаптацию
+                    <a href="#">RFC 1149</a> для
+                    IPv6<sup><a id="cite-ref-1" href="#cite-note-1">[1]</a></sup>.
+                </p>
+                <figure class="figure-right">
+                    <img alt=Голубь src="">
+                    <figcaption>
+                        Голубь
+                        <a class="figcaption-link" href="#" title="увеличить"></a>
+                    </figcaption>
+                </figure>
+
+                <div class=main-nav-box>
+                    <nav class="main-nav">
+                        <header>
+                            <h2>Содержание</h2>
+                            <div>[<a><span class="controls">скрыть</span></a>]</div>
+                        </header>
+                        <ol class="contents-list">
+                            <li><a href="#Практическая реализация">Практическая реализация</a></li>
+                            <li><a href="#См. также">См. также</a></li>
+                            <li><a href="#Примечания">Примечания</a></li>
+                            <li><a href="#Ссылки">Ссылки</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </article>
+            <section>
+                <header>
+                    <h2 id="Практическая реализация">Практическая реализация</h2>
+                    <nav>[ <a title="Редактировать раздел «Практическая реализация»" href="#">править</a> |
+                        <a title="Редактировать раздел «Практическая реализация»" shref="#">править код</a> ]</nav>
+                </header>
+                <p>
+                    <a href="#"><time datetime="2001-04-28">28 апреля 2001</time></a> на практике
+                    реализован<sup><a id="cite-ref-2" href="#cite-note-2">[2]</a></sup> членами
+                    <a href="#">Бергенской</a>
+                    <a href="#">группы пользователей Linux</a> (<a href="#">Норвегия</a>).
+                    Они переслали 9 пакетов данных, содержащих по одному
+                    <a href="#">ICMP</a> <a href="#">эхо-запросу</a>, на 9 голубях в удалённый пункт,
+                    который находился на расстоянии 5 км.
+                    В пункт отправки успешно вернулись только 4 эхо-ответа.
+                    При потерях 55,6 % пакетов и времени задержки от
+                    53 минут до 1 часа 40 минут, метод всё же доказал
+                    свою практическую работоспособность.
+                </p>
+                <code class="code">
+                    Script started on Sat Apr 28 11:24:09 2001
+                    vegard@gyversalen:~$ /sbin/ifconfig tun0
+                    tun0 Link encap:Point-to-Point Protocol
+                    inet addr:10.0.3.2 P-t-P:10.0.3.1 Mask:255.255.255.255
+                    UP POINTOPOINT RUNNING NOARP MULTICAST MTU:150 Metric:1
+                    RX packets:1 errors:0 dropped:0 overruns:0 frame:0
+                    TX packets:2 errors:0 dropped:0 overruns:0 carrier:0
+                    collisions:0
+                    RX bytes:88 (88.0 b) TX bytes:168 (168.0 b)
+
+                    vegard@gyversalen:~$ ping -c 9 -i 900 10.0.3.1
+                    PING 10.0.3.1 (10.0.3.1): 56 data bytes
+                    64 bytes from 10.0.3.1: icmp_seq=0 ttl=255 time=6165731.1 ms
+                    64 bytes from 10.0.3.1: icmp_seq=4 ttl=255 time=3211900.8 ms
+                    64 bytes from 10.0.3.1: icmp_seq=2 ttl=255 time=5124922.8 ms
+                    64 bytes from 10.0.3.1: icmp_seq=1 ttl=255 time=6388671.9 ms
+
+                    --- 10.0.3.1 ping statistics ---
+                    9 packets transmitted, 4 packets received, 55% packet loss
+                    round-trip min/avg/max = 3211900.8/5222806.6/6388671.9 ms
+                    vegard@gyversalen:~$ exit
+
+                    Script done on Sat Apr 28 14:14:28 2001
+                </code>
+            </section>
+            <footer>
+                <section>
+                    <header>
+                        <h2 id="См. также">См. также</h2>
+                        <nav>[ <a title="Редактировать раздел «См. также»" href="#">править</a> |
+                            <a title="Редактировать раздел «См. также»" href="#">править код</a> ]</nav>
+                    </header>
+                    <ul>
+                        <li><a href="#">Первоапрельские RFC</a></li>
+                        <li><a href="#">HTCPCP</a>— гипертекстовый протокол управления кофеваркой</li>
+                        <li><a href="#">Голубиная связь</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <header>
+                        <h2 id="Примечания">Примечания</h2>
+                        <nav>[ <a title="Редактировать раздел «Примечания»" href="#">править</a> |
+                            <a title="Редактировать раздел «Примечания»" href="#">править код</a> ]</nav>
+                    </header>
+                    <nav>
+                        <ol>
+                            <li id="cite-note-1"><a href="#cite-ref-1">↑</a> <a href="#">Adaptation of RFC 1149 for
+                                    IPv6</a>.</li>
+                            <li id="cite-note-2"><a href="#cite-ref-2">↑</a> <a href="#">RFC-1149 | BLUG</a></li>
+                        </ol>
+                    </nav>
+                </section>
+                <section>
+                    <header>
+                        <h2 id="Ссылки">Ссылки</h2>
+                        <nav>[ <a title="Редактировать раздел «Ссылки»" href="#">править</a> |
+                            <a title="Редактировать раздел «Ссылки»" href="#">править код</a> ]</nav>
+                    </header>
+                    <nav>
+                        <ul>
+                            <li><a href="#">RFC 1149</a><span class="note"> (англ.)</span></li>
+                            <li><a href="#">Практическая реализация протокола</a><span class="note"> (англ.)</span></li>
+                            <li><a href="#">RFC 2549</a><span class="note"> (англ.)</span></li>
+                        </ul>
+                    </nav>
+                </section>
+                <nav class="nav-related">
+                    <header>
+                        <a href="#" title="Просмотр этого шаблона"></a>
+                        <h3><a href="#">Первоапрельские RFC</a></h3>
+                        <div>[<a href="#"><span class="controls">скрыть</span></a>]</div>
+                    </header>
+                    <ul>
+                        <li>IP посредством почтовых голубей</li>
+                        <li><a href="#" class="nonexistent">Semaphore Flag Signaling System</a></li>
+                        <li><a href="#" class="nonexistent">Management of IP numbers by peg-dhcp</a></li>
+                        <li><a href="#">Гипертекстовый протокол управления кофеваркой</a></li>
+                        <li><a href="#" class="nonexistent">кофеваркой Флаг безопасности в заголовке IPv4 (Бит Зла)</a></li>
+                        <li><a href="#" class="nonexistent">Форматы эффективного трансформирования Юникода UTF-9 и
+                                UTF-18</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav-categories">
+                    <a href="#">Категории</a>:
+                    <ul>
+                        <li><a href="#">Интернет-протоколы</a></li>
+                        <li><a href="#">TCP/IP</a></li>
+                        <li><a href="#">Протоколы сетевого уровня</a></li>
+                        <li><a href="#">Первоапрельские шутки</a></li>
+                        <li><a href="#">Компьютерный юмор</a></li>
+                        <li><a href="#">Сетевые протоколы</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <aside>
+        <a href="#" title="Перейти на заглавную страницу">
+            <img src="" alt="Логотип">
+        </a>
+        <nav class="aside-nav">
+            <li><a href="#">Заглавная страница</a></li>
+            <li><a href="#">Рубрикация</a></li>
+            <li><a href="#">Указатель А — Я</a></li>
+            <li><a href="#">Избранные статьи</a></li>
+            <li><a href="#">Случайная статья</a></li>
+            <li><a href="#">Текущие события</a></li>
+        </nav>
+        <nav class="aside-nav">
+            <h3>Участие</h3>
+            <li><a href="#">Сообщить об ошибке</a></li>
+            <li><a href="#">Сообщество</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Свежие правки</a></li>
+            <li><a href="#">Новые страницы</a></li>
+            <li><a href="#">Справка</a></li>
+            <li><a href="#">Пожертвовать</a></li>
+        </nav>
+        <nav class="aside-nav">
+            <h3>Инструменты</h3>
+            <li><a href="#">Ссылки сюда</a></li>
+            <li><a href="#">Связанные правки</a></li>
+            <li><a href="#">Спецстраницы</a></li>
+            <li><a href="#">Постоянная ссылка</a></li>
+            <li><a href="#">Сведения о странице</a></li>
+            <li><a href="#">Цитировать страницу</a></li>
+        </nav>
+        <nav class="aside-nav">
+            <h3>Печать/Экспорт</h3>
+            <li><a href="#">Создать книгу</a></li>
+            <li><a href="#">Скачать как PDF</a></li>
+            <li><a href="#">Версия для печати</a></li>
+        </nav>
+        <nav>
+            <h3>В других проектах</h3>
+            <li><a href="#">Элемент Викиданных</a></li>
+        </nav>
+        <nav>
+            <h3>На других языках</h3>
+            <button class="settings-trigger"></button>
+            <li><a href="#">Deutsch</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+            <li><a href="#">Italiano</a></li>
+            <li><a href="#">日本語</a></li>
+            <li><a href="#">한국어</a></li>
+            <li><a href="#">Português</a></li>
+            <li><a href="#">中文</a></li>
+            <button class="language-selector" title="Все языки (изначальная выборка — это языки, которые чаще всего использовались вами и другими)"
+            >Еще 9</button>
+            <a href="" class="edit-page" title="Править межъязыковые ссылки">Править ссылки</a>
+        </nav>
+    </aside>
+    <footer>
+        <p>
+            Эта страница в последний раз была отредактирована 
+            <time datetime="2018-08-23 15:09:00.000">23 августа 2018 в 15:09</time>.
+        </p>
+        <p>
+            Текст доступен по <a href="#">лицензии Creative Commons Attribution-ShareAlike</a>;
+            в отдельных случаях могут действовать дополнительные условия.
+            Подробнее см. <a href="#">Условия использования</a>.
+            Wikipedia® — зарегистрированный товарный знак некоммерческой организации
+            <a href="#">Wikimedia Foundation, Inc.</a>
+        </p>
+        <nav class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Описание Википедии</a></li>
+                <li><a href="#">Отказ от ответсвенности</a></li>
+                <li><a href="#">Свяжитесь с нами</a></li>
+                <li><a href="#">Разработчики</a></li>
+                <li><a href="#">Соглашение о cookies</a></li>
+                <li><a href="#">Мобильная версия</a></li>
+            </ul>
+        </nav>
+        <ul class="footer-icons">
+            <li><a href="#"><img alt="Wikimedia Foundation" src="https://ru.wikipedia.org/static/images/wikimedia-button.png"></a></li>
+            <li><a href="#"><img alt="Powered by MediaWiki" src="https://ru.wikipedia.org/static/images/poweredby_mediawiki_88x31.png"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
