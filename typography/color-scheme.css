@@ -8,7 +8,7 @@ body {
     --visited-link-color: #c5c6c7;
     --active-link-color: #f8e9a1;
     --nonexistent-link-color: #f76c6c;
-    --nonexistent-visited-link-color:#a55858;
+    --nonexistent-visited-link-color: #a55858;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -36,6 +36,11 @@ a:active {
 
 button {
     color: var(--link-color);
+}
+
+.head-nav-bottom-left,
+.head-nav-bottom-right {
+    border-color: var(--border-color);
 }
 
 .main {
@@ -78,8 +83,22 @@ button {
 }
 
 .tab {
-    border-image: linear-gradient(to top, var(--border-color) 0%, transparent 80%);
+    border-image-source: linear-gradient(to top, var(--border-color) 0%, transparent 80%);
     border-image-slice: 1;
+}
+
+.active-tab {
+    background: linear-gradient(to top,
+        var(--main-bg-color) 0px,
+        var(--main-bg-color) 6px,
+        transparent 80%);
+    border-image-source: linear-gradient(to top,
+        transparent 0px,
+        transparent 5px,
+        var(--border-color) 5px,
+        transparent 80%);
+    border-bottom-left-radius: 17%;
+    border-bottom-right-radius: 17%;
 }
 
 .figure-right {
