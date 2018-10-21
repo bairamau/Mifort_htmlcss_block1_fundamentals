@@ -1,0 +1,96 @@
+body {
+    --text-color: #ffffff;
+    --bg-color: #0b0c10;
+    --main-bg-color: #1f2833;
+    --code-area-bg-color: #0b0c10;
+    --border-color: #66fcf1;
+    --link-color: #5ab9ea;
+    --visited-link-color: #c5c6c7;
+    --active-link-color: #f8e9a1;
+    --nonexistent-link-color: #f76c6c;
+    --nonexistent-visited-link-color:#a55858;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+:link {
+    color: var(--link-color);
+}
+
+
+:visited {
+    color: var(--visited-link-color);
+}
+
+a:active {
+    color: var(--active-link-color);
+}
+
+.nonexistent {
+    color: var(--nonexistent-link-color);
+}
+
+.nonexistent:visited {
+    color: var(--nonexistent-visited-link-color);
+}
+
+button {
+    color: var(--link-color);
+}
+
+.main {
+    border-color: var(--border-color);
+    background-color: var(--main-bg-color);
+}
+
+.main-nav {
+    border-color: var(--border-color);
+}
+
+.categories-nav {
+    border-color: var(--border-color);
+}
+
+.categories-item+.categories-item {
+    border-color: var(--border-color);
+}
+
+.related-nav {
+    border-color: var(--border-color);
+}
+
+.related-header {
+    background-color: #464866;
+}
+
+.pre-box {
+    background-color: var(--code-area-bg-color);
+    border-color: var(--border-color);
+}
+
+.language-selector {
+    color: var(--bg-color);
+}
+
+.search-form {
+    background-color: white;
+    border-color: var(--border-color);
+}
+
+.tab {
+    border-image: linear-gradient(to top, var(--border-color) 0%, transparent 80%);
+    border-image-slice: 1;
+}
+
+.figure-right {
+    border-color: var(--border-color);
+}
+
+.main-header {
+    border-color: var(--border-color);
+}
+
+.side-header {
+    border-image: linear-gradient(to right, transparent 0%, var(--border-color) 50%, transparent 100%);
+    border-image-slice: 1;
+}
