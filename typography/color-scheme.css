@@ -49,6 +49,7 @@ button {
 }
 
 .main-nav {
+    background-color: var(--bg-color);
     border-color: var(--border-color);
 }
 
@@ -95,6 +96,7 @@ button {
 
 .figure-right {
     border-color: var(--border-color);
+    background-color: var(--bg-color);
 }
 
 .main-header {
