@@ -287,6 +287,15 @@ button:hover {
     padding: 15px 25px 25px 25px;
 }
 
+.footer-links {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.footer-links-item {
+    padding-right:1em;
+}
+
 .footer-icons {
     justify-content: flex-end;
 }
