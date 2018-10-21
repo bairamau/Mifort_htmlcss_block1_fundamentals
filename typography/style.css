@@ -100,18 +100,22 @@ button:hover {
 }
 
 .tab {
+    display:flex;
     border-right: 2px solid;
     border-left: 2px solid;
-    padding: 1.2em 0.6em 2px 0.6em;
 }
 
 .tab+.tab {
     border-left: none;
 }
 
-.active-tab {
+.tab-link {
+    padding:10px;
+}
+
+.active-tab-link {
+    margin-bottom: -3px;
     z-index:1;
-    margin-bottom:-6px;
 }
 
 .form-box {

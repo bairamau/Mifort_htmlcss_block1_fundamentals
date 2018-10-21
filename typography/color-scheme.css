@@ -83,22 +83,14 @@ button {
 }
 
 .tab {
-    border-image-source: linear-gradient(to top, var(--border-color) 0%, transparent 80%);
+    border-image: linear-gradient(to top, var(--border-color), transparent);
     border-image-slice: 1;
 }
 
-.active-tab {
+.active-tab-link {
     background: linear-gradient(to top,
-        var(--main-bg-color) 0px,
-        var(--main-bg-color) 6px,
-        transparent 80%);
-    border-image-source: linear-gradient(to top,
-        transparent 0px,
-        transparent 5px,
-        var(--border-color) 5px,
-        transparent 80%);
-    border-bottom-left-radius: 17%;
-    border-bottom-right-radius: 17%;
+        var(--main-bg-color),
+        var(--bg-color));
 }
 
 .figure-right {
