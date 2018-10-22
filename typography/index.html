@@ -113,7 +113,7 @@
                     </nav>
                     <nav class="head-nav-bottom-right">
                         <ul class="raw-list horizontal-list tabs">
-                            <li class="tab"><a class="active-tab-link tab-link"href="#">Читать</a></li>
+                            <li class="tab"><a class="active-tab-link tab-link" href="#">Читать</a></li>
                             <li class="tab"><a class="tab-link" href="#">Править</a></li>
                             <li class="tab"><a class="tab-link" href="#">Править код</a></li>
                             <li class="tab"><a class="tab-link" href="#">История</a></li>
@@ -136,49 +136,51 @@
                     <div class="edit-buttons-container"><button class="edit-button" title="Править преамбулу">править</button>
                         | <button class="edit-button" title="Править преамбулу">править код</button></div>
                 </div>
-                <article class="main-article">
-                    <figure class="figure-right">
-                        <img width="220" height="200" alt=Голубь src="images/pigeon_600x390.jpg">
-                        <figcaption>
-                            <a href="#">Голубь</a>
-                            <a class="figcaption-link" href="#" title="увеличить"></a>
-                        </figcaption>
-                    </figure>
-                    <p>
-                        <b>IP посредством почтовых голубей</b> ( <a href="#">англ.</a>
-                        IP over Avian Carriers; <a href="#">RFC 1149</a>) —
-                        шуточный <a href="#">RFC</a>, описывающий способ передачи
-                        <a href="#">IP</a>-пакетов с помощью <a href="#">голубей</a>.
-                        Опубликован
-                        <a href="#"><time datetime="1990-04-01">1 апреля 1990</time></a>
-                        организацией
-                        <a href="#">Internet Engineering Task Force</a>.
-                        Написан Д. Вейтцманом (Waitzman),
-                        как один из <a href="#">первоапрельских RFC</a>.
-                        Вейтцман расширил протокол
-                        <a href="#"><time datetime="1999-04-01">1 апреля 1999</time></a>
-                        в <a href="#">RFC 2549</a> «IP посредством
-                        почтовых голубей с <a href="#">QoS</a>». В 2011 вышел
-                        <a href="#">RFC 6214</a>, содержащий адаптацию
-                        <a href="#">RFC 1149</a> для
-                        IPv6<sup><a id="cite-ref-1" href="#cite-note-1">[1]</a></sup>.
-                    </p>
+                <section>
+                    <article class="main-article">
+                        <figure class="figure-right">
+                            <img width="220" height="200" alt=Голубь src="images/pigeon_600x390.jpg">
+                            <figcaption>
+                                <a href="#">Голубь</a>
+                                <a class="figcaption-link" href="#" title="увеличить"></a>
+                            </figcaption>
+                        </figure>
+                        <p>
+                            <b>IP посредством почтовых голубей</b> ( <a href="#">англ.</a>
+                            IP over Avian Carriers; <a href="#">RFC 1149</a>) —
+                            шуточный <a href="#">RFC</a>, описывающий способ передачи
+                            <a href="#">IP</a>-пакетов с помощью <a href="#">голубей</a>.
+                            Опубликован
+                            <a href="#"><time datetime="1990-04-01">1 апреля 1990</time></a>
+                            организацией
+                            <a href="#">Internet Engineering Task Force</a>.
+                            Написан Д. Вейтцманом (Waitzman),
+                            как один из <a href="#">первоапрельских RFC</a>.
+                            Вейтцман расширил протокол
+                            <a href="#"><time datetime="1999-04-01">1 апреля 1999</time></a>
+                            в <a href="#">RFC 2549</a> «IP посредством
+                            почтовых голубей с <a href="#">QoS</a>». В 2011 вышел
+                            <a href="#">RFC 6214</a>, содержащий адаптацию
+                            <a href="#">RFC 1149</a> для
+                            IPv6<sup><a id="cite-ref-1" href="#cite-note-1">[1]</a></sup>.
+                        </p>
 
-                    <div class=main-nav-box>
-                        <nav class="main-nav">
-                            <header class="main-nav-header">
-                                <h2 class="contents-heading">Содержание</h2>
-                                <div class="hide-button-container"><button class="hide-button">скрыть</button></div>
-                            </header>
-                            <ol class="raw-list contents-list">
-                                <li><a href="#Практическая реализация">Практическая реализация</a></li>
-                                <li><a href="#См. также">См. также</a></li>
-                                <li><a href="#Примечания">Примечания</a></li>
-                                <li><a href="#Ссылки">Ссылки</a></li>
-                            </ol>
-                        </nav>
-                    </div>
-                </article>
+                        <div class=main-nav-box>
+                            <nav class="main-nav">
+                                <header class="main-nav-header">
+                                    <h2 class="contents-heading">Содержание</h2>
+                                    <div class="hide-button-container"><button class="hide-button">скрыть</button></div>
+                                </header>
+                                <ol class="raw-list contents-list">
+                                    <li><a href="#Практическая реализация">Практическая реализация</a></li>
+                                    <li><a href="#См. также">См. также</a></li>
+                                    <li><a href="#Примечания">Примечания</a></li>
+                                    <li><a href="#Ссылки">Ссылки</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </article>
+                </section>
                 <section>
                     <header class="main-header">
                         <h2 id="Практическая реализация">Практическая реализация</h2>
@@ -200,7 +202,7 @@
                         свою практическую работоспособность.
                     </p>
                     <div class="pre-box">
-<pre><code class="code">Script started on Sat Apr 28 11:24:09 2001
+                        <pre><code class="code">Script started on Sat Apr 28 11:24:09 2001
 vegard@gyversalen:~$ /sbin/ifconfig tun0
 tun0      Link encap:Point-to-Point Protocol  
           inet addr:10.0.3.2  P-t-P:10.0.3.1  Mask:255.255.255.255
