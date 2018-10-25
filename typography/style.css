@@ -100,7 +100,7 @@ button:hover {
 }
 
 .tab {
-    display:flex;
+    display: flex;
     border-right: 2px solid;
     border-left: 2px solid;
 }
@@ -110,33 +110,25 @@ button:hover {
 }
 
 .tab-link {
-    padding:10px 10px 5px 10px;
+    padding: 10px 10px 5px 10px;
 }
 
 .active-tab-link {
     margin-bottom: -3px;
-    z-index:1;
-}
-
-.form-box {
-    min-width: 22vw;
-    padding-top: 5px;
-    padding-left: 5px;
-    align-self:center;
+    z-index: 1;
 }
 
 .search-form {
     border: 1px solid;
     border-radius: 2px;
+    align-self: center;
+    margin-left: 1em;
     display: flex;
-    align-items: center;
+    padding:1px;
 }
 
 .search-input {
-    flex: 1;
-    box-sizing: border-box;
-    height: 20px;
-    padding: 0 0 0 2px;
+    min-width: 20vw;
     border: none;
 }
 
