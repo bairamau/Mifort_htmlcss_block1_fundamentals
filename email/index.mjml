@@ -13,12 +13,13 @@
       </mj-attributes>
         <mj-style inline="inline">
       .rounded { border-radius:5px;}
+      .pointer { cursor:pointer; }
   </mj-head>
   <mj-body background-color="#ffffff" width="900px">
     <mj-wrapper background-repeat="no-repeat" padding-bottom="0" background-url="https://i.imgur.com/FrLZDUC.png">
       <mj-section padding-top="57px">
         <mj-column width="600px">
-          <mj-text align="right"><a style="font-size:12px; color:#ffffff; border-bottom:1px dotted #ffffff;">Читать в браузере</a></mj-text>
+          <mj-text align="right"><a style="font-size:12px; color:#ffffff; border-bottom:1px dotted #ffffff;cursor:pointer;">Читать в браузере</a></mj-text>
         </mj-column>
       </mj-section>
       <mj-section padding-top="119px">
@@ -42,7 +43,7 @@
       <mj-section padding-top="69px" padding-bottom="90px">
         <mj-column width="600px">
           <mj-button background-color="#cc2936" color="#ffffff" border-radius="0px" font-size="12px" color="#242424" align="left" inner-padding="15px 25px">
-            <mj-raw style="letter-spacing:2px">ПОДРОБНЕЕ</mj-raw>
+            <mj-raw style="letter-spacing:2px;cursor:pointer;">ПОДРОБНЕЕ</mj-raw>
           </mj-button>
         </mj-column>
       </mj-section>
@@ -89,7 +90,7 @@
       <mj-section padding-top="30px">
         <mj-column width="600px">
           <mj-button background-color="#ffffff" border="1px solid #929292" border-radius="0px" font-size="10px" font-weight="600" color="#242424" align="right" width="138px" inner-padding="15px 25px">
-            <mj-raw style="letter-spacing:2px">ПОДРОБНЕЕ</mj-raw>
+            <mj-raw style="letter-spacing:2px;cursor:pointer;">ПОДРОБНЕЕ</mj-raw>
           </mj-button>
         </mj-column>
       </mj-section>
@@ -98,21 +99,21 @@
       <mj-section>
         <mj-column width="32%" padding="30px" background-color="#eeeeef">
           <mj-image padding-bottom="15px" width="25px" height="20px" src="https://i.imgur.com/HBif6s3.png" />
-          <mj-text align="center" color="#242424" font-size="14px">Написать письмо</mj-text>
+          <mj-text align="center" color="#242424" font-size="14px" css-class="pointer">Написать письмо</mj-text>
         </mj-column>
         <mj-column width="2%">
           <mj-raw>&nbsp;</mj-raw>
         </mj-column>
         <mj-column width="32%" padding="30px" background-color="#eeeeef">
           <mj-image padding-bottom="15px" width="19px" height="20px" src="https://i.imgur.com/Tv5PW7c.png" />
-          <mj-text align="center" color="#242424" font-size="14px">Связаться с менеджером</mj-text>
+          <mj-text align="center" color="#242424" font-size="14px" css-class="pointer">Связаться с менеджером</mj-text>
         </mj-column>
         <mj-column width="2%">
           <mj-raw>&nbsp;</mj-raw>
         </mj-column>
         <mj-column width="32%" padding="30px" background-color="#eeeeef">
           <mj-image padding-bottom="15px" width="21px" height="20px" src="https://i.imgur.com/o0ft9MZ.png" />
-          <mj-text align="center" color="#242424" font-size="14px">Перейти на сайт</mj-text>
+          <mj-text align="center" color="#242424" font-size="14px" css-class="pointer">Перейти на сайт</mj-text>
         </mj-column>
       </mj-section>
     </mj-wrapper>
@@ -130,7 +131,7 @@
                 <img src="https://i.imgur.com/YoOek8b.png" />
               </td>
               <td>
-                <a style="color:#009a8d; font-size:14px;line-height:24px">Читать дальше</a>
+                <a style="color:#009a8d; font-size:14px;line-height:24px;cursor:pointer;">Читать дальше</a>
               </td>
             </tr>
           </mj-table>
@@ -147,7 +148,7 @@
                 <img src="https://i.imgur.com/YoOek8b.png" />
               </td>
               <td>
-                <a style="color:#009a8d; font-size:14px;line-height:24px">Читать дальше</a>
+                <a style="color:#009a8d; font-size:14px;line-height:24px;cursor:pointer;">Читать дальше</a>
               </td>
             </tr>
           </mj-table>
@@ -164,7 +165,7 @@
                 <img src="https://i.imgur.com/YoOek8b.png" />
               </td>
               <td>
-                <a style="color:#009a8d; font-size:14px;line-height:24px">Читать дальше</a>
+                <a style="color:#009a8d; font-size:14px;line-height:24px;cursor:pointer;">Читать дальше</a>
               </td>
             </tr>
           </mj-table>
@@ -181,7 +182,7 @@
             <mj-text padding="10px 0px 10px 0px" font-size="18px" color="#444444" line-height="24px">Цифровой видеорегистратор QNAP VS-6012Pro</mj-text>
             <mj-text padding="10px 0px 10px 0px" font-size="12px" color="#009a8d" line-height="24px">Производитель: QNAP</mj-text>
             <mj-text padding="10px 0px 10px 0px" font-size="12px" color="#9c9c9c" line-height="18px">Построенная на базе ОС Linux, система обеспечивает быстрое конфигурирование без использования ПК, подключение USB-клавиатуры, мыши и монитора VGA для локального просмотра видео</mj-text>
-            <mj-button padding="10px 0px 10px 0px" background-color="#cc2936" border-radius="0px" align="left">Узнать больше</mj-button>
+            <mj-button padding="10px 0px 10px 0px" background-color="#cc2936" border-radius="0px" align="left"><span style="cursor:pointer;">Узнать больше</span></mj-button>
           </mj-column>
         </mj-group>
       </mj-section>
@@ -194,7 +195,7 @@
             <mj-text padding="10px 0px 10px 0px" font-size="18px" color="#444444" line-height="24px">IP камера VIVOTEK IP8151/IP8151P</mj-text>
             <mj-text padding="10px 0px 10px 0px" font-size="12px" color="#009a8d" line-height="24px">Производитель: VIVOTEK</mj-text>
             <mj-text padding="10px 0px 10px 0px" font-size="12px" color="#9c9c9c" line-height="18px">Фиксированные 1.3-мегапиксельные камеры VIVOTEK IP8151/51P предназначены для использования внутри помещения. Разрешения 1280×1024 при съемке со скоростью 30 кадров в секунду достаточно для получения подробной и четкой картинки</ mj-text>
-              <mj-button padding="10px 0px 10px 0px" background-color="#cc2936" border-radius="0px" align="left">Узнать больше</mj-button>
+              <mj-button padding="10px 0px 10px 0px" background-color="#cc2936" border-radius="0px" align="left"><span style="cursor:pointer;">Узнать больше</span></mj-button>
           </mj-column>
         </mj-group>
       </mj-section>
@@ -287,10 +288,10 @@
           <mj-table width="80px">
             <tr>
               <td>
-                <img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" />
+                <a href="#"><img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" /></a>
               </td>
               <td>
-                <img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" />
+                <a href="#"><img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" /></a>
               </td>
             </tr>
           </mj-table>
@@ -304,10 +305,10 @@
           <mj-table width="80px">
             <tr>
               <td>
-                <img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" />
+                <a href="#"><img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" /></a>
               </td>
               <td>
-                <img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" />
+                <a href="#"><img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" /></a>
               </td>
             </tr>
           </mj-table>
@@ -321,10 +322,10 @@
           <mj-table width="80px">
             <tr>
               <td>
-                <img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" />
+                <a href="#"><img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" /></a>
               </td>
               <td>
-                <img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" />
+                <a href="#"><img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" /></a>
               </td>
             </tr>
           </mj-table>
