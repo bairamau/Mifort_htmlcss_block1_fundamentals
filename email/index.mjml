@@ -4,18 +4,15 @@
     <mj-title>
       Компания Датафлоу
     </mj-title>
-    <mj-style inline="inline">
-      .rounded {
-      border-radius:5px;
-      background-color:red;
-      }
-    <mj-font name="PT Sans" href="https://fonts.googleapis.com/css?family=PT+Sans" />
-    <mj-attributes>
-      <mj-all padding="0px" margin="0px" />
-      <mj-text font-family="PT Sans, sans-serif" />
-      <mj-wrapper padding-bottom="50px" />
-      <mj-class name="main" color="#929292" font-size="14px" line-height="24px" />
-    </mj-attributes>
+      <mj-font name="PT Sans" href="https://fonts.googleapis.com/css?family=PT+Sans" />
+      <mj-attributes>
+        <mj-all padding="0px" margin="0px" />
+        <mj-text font-family="PT Sans, sans-serif" />
+        <mj-wrapper padding-bottom="50px" />
+        <mj-class name="main" color="#929292" font-size="14px" line-height="24px" />
+      </mj-attributes>
+        <mj-style inline="inline">
+      .rounded { border-radius:5px;}
   </mj-head>
   <mj-body background-color="#ffffff" width="900px">
     <mj-wrapper background-repeat="no-repeat" padding-bottom="0" background-url="https://i.imgur.com/FrLZDUC.png">
@@ -127,7 +124,7 @@
             Новинки NAS QNAP — Просто и доступно!
           </mj-text>
           <mj-text padding="10px 10px 10px 0" font-size="14px" line-height="20px" color="#9c9c9c">Новая линейка сетевых накопителей в настольном исполнении: D1, D2 и D4</mj-text>
-           <mj-table>
+          <mj-table>
             <tr>
               <td width="20px">
                 <img src="https://i.imgur.com/YoOek8b.png" />
@@ -144,7 +141,7 @@
             График работы склада 30.06.2017
           </mj-text>
           <mj-text padding="10px 10px 10px 0" font-size="14px" line-height="20px" color="#9c9c9c">30 июня 2017 г. склады компании «Датастрим ДЕП» работают до 16.00.</mj-text>
-           <mj-table>
+          <mj-table>
             <tr>
               <td width="20px">
                 <img src="https://i.imgur.com/YoOek8b.png" />
@@ -161,7 +158,7 @@
             Приглашаем посетить стенд нашей компании
           </mj-text>
           <mj-text padding="10px 10px 10px 0" font-size="14px" line-height="20px" color="#9c9c9c">На пятой республиканской выставке-форуме «Центр безопасности 2017»</mj-text>
-           <mj-table>
+          <mj-table>
             <tr>
               <td width="20px">
                 <img src="https://i.imgur.com/YoOek8b.png" />
@@ -309,7 +306,7 @@
               <td>
                 <img style="border:1px solid #b6b6b6; padding-left:8px; padding-right:8px; padding-top:9px; padding-bottom:9px;" width="14px" height="11px" src="https://i.imgur.com/G1fV5Uq.png" />
               </td>
-              <td>		
+              <td>
                 <img style="border:1px solid #b6b6b6; padding-left:9px; padding-right:9px; padding-top:9px; padding-bottom:9px;" width="11px" height="11px" src="https://i.imgur.com/rTv97VC.png" />
               </td>
             </tr>
@@ -332,7 +329,7 @@
             </tr>
           </mj-table>
         </mj-column>
-       </mj-section>
+      </mj-section>
     </mj-wrapper>
     <mj-wrapper background-color="#001b21">
       <mj-section>
@@ -379,4 +376,4 @@
       </mj-section>
     </mj-wrapper>
   </mj-body>
-</mjml> 
+</mjml>
