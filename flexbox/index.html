@@ -8,181 +8,350 @@
     />
     <title>BelOilGroup</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__heading">БелОилгрупп</h1>
-      <p class="header__description">
-        Официальный дистрибьютор смазочных материалов <br />
-        TOTAL, UNIL, ARDECA
-      </p>
+    <header id="head" class="header">
+      <div class="centering-container">
+        <h1 class="header__heading">БелОилгрупп</h1>
+        <p class="header__description">
+          Официальный дистрибьютор смазочных материалов <br />
+          TOTAL, UNIL, ARDECA
+        </p>
+      </div>
     </header>
     <main>
       <section>
-        <header>
-          <p>
-            ООО «БелОилгрупп» является официальным дистрибьютором известных
-            европейских производителей смазочных материалов: TOTAL Lubrifiants,
-            UNIL Lubricants, Vroman n.v. (торговая марка ARDECA) на территории
-            Республики Беларусь.
-          </p>
-          <p>
-            В данный момент наш ассортимент включает широкий спектр продукции
-            для легкового и грузового транспорта, а также для промышленных
-            предприятий.
-          </p>
-        </header>
-        <section>
-          <img src="images/unil.png" />
-          <div>
-            <h3>UNIL Lubricants</h3>
-            <p>
-              Unil Lubricants является специалистом смазочных материалов. Для
-              эффективной работы машин и оборудования UNIL предлагает более 500
-              различных типов масел и смазочных материалов.
+        <div class="products">
+          <header class="products-item products-item-summary">
+            <p class="summary-paragraph">
+              ООО «БелОилгрупп» является официальным дистрибьютором известных
+              европейских производителей смазочных материалов: TOTAL
+              Lubrifiants, UNIL Lubricants, Vroman n.v. (торговая марка ARDECA)
+              на территории Республики Беларусь.
             </p>
-            <a>Перейти в каталог</a>
-          </div>
-        </section>
-        <section>
-          <img src="images/ardeca.png" />
-          <div>
-            <h3>ARDECA</h3>
-            <p>
-              Специалист в сфере смазочных материалов, гарантирующий надежность.
-              Высокое качество продукции, большой и постоянно обновляющийся
-              ассортимент, широкий спектр услуг.
+            <p class="summary-paragraph">
+              В данный момент наш ассортимент включает широкий спектр продукции
+              для легкового и грузового транспорта, а также для промышленных
+              предприятий.
             </p>
-            <a>Перейти в каталог</a>
-          </div>
-        </section>
-        <section>
-          <img src="images/total.png" />
-          <div>
-            <h3>TOTAL Lubrifiants</h3>
-            <p>
-              Разработанные в сотрудничестве с ведущими производителями и
-              отвечающие международным стандартам (ACEA, API, SAE), масла TOTAL
-              защищают двигатели от износа.
-            </p>
-            <a>Перейти в каталог</a>
-          </div>
-        </section>
+          </header>
+          <section class="products-item">
+            <img src="images/total.png" class="products-item-image" />
+            <div class="products-item-desc">
+              <h3>TOTAL Lubrifiants</h3>
+              <p>
+                Разработанные в сотрудничестве с ведущими производителями и
+                отвечающие международным стандартам (ACEA, API, SAE), масла
+                TOTAL защищают двигатели от износа.
+              </p>
+              <a>Перейти в каталог</a>
+            </div>
+          </section>
+          <section class="products-item">
+            <img src="images/ardeca.png" class="products-item-image" />
+            <div class="products-item-desc">
+              <h3>ARDECA</h3>
+              <p>
+                Специалист в сфере смазочных материалов, гарантирующий
+                надежность. Высокое качество продукции, большой и постоянно
+                обновляющийся ассортимент, широкий спектр услуг.
+              </p>
+              <a>Перейти в каталог</a>
+            </div>
+          </section>
+          <section class="products-item">
+            <img src="images/unil.png" class="products-item-image" />
+            <div class="products-item-desc">
+              <h3>UNIL Lubricants</h3>
+              <p>
+                Unil Lubricants является специалистом смазочных материалов. Для
+                эффективной работы машин и оборудования UNIL предлагает более
+                500 различных типов масел и смазочных материалов.
+              </p>
+              <a>Перейти в каталог</a>
+            </div>
+          </section>
+        </div>
       </section>
       <section>
-        <header>
-          <div><a>О наших преимуществах</a></div>
-          <div>
-            <ul>
-              <li><a href="tel:0">+375 17 513-08-96</a></li>
-              <li><a href="tel:0">+375 17 513-08-97</a></li>
-              <li><a href="tel:0">+375 44 76-76-000</a></li>
-            </ul>
+        <header class="separator">
+          <div class="centering-container">
+            <div class="separator-content-container">
+              <div class="separator-link-container">
+                <a class="separator__link" href="#advantages"
+                  >О наших преимуществах</a
+                >
+                <i class="fa fa-arrow-circle-down fa-lg"></i>
+              </div>
+              <div>
+                <ul class="separator__numbers">
+                  <li class='extra'>
+                    <a class="separator__number" href="tel:0"
+                      >+375 17 513-08-96</a
+                    >
+                  </li>
+                  <li class="extra">
+                    <a class="separator__number" href="tel:0"
+                      >+375 17 513-08-97</a
+                    >
+                  </li>
+                  <li class="extra">
+                    <a class="separator__number" href="tel:0"
+                      >+375 44 76-76-000</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </header>
-        <p>10 лет успешной работы на белорусском рынке</p>
-        <p>
-          Если вы выбираете нас в качестве партнера, то можете быть уверены: это
-          будет взаимовыгодное сотрудничество. За 10 лет работы на рынке
-          Республики Беларусь наша компания зарекомендовала себя как надежный
-          поставщик и на сегодняшний день мы можем предложить своим клиентам
-          следующее:
-        </p>
-        <ul>
-          <li>
-            <p>Товар в наличии</p>
-            <p>Постоянное наличие товаров на складе</p>
-          </li>
-          <li>
-            <p>Товар в резерве</p>
-            <p>Резерв под потребности покупателей</p>
-          </li>
-          <li>
-            <p>Сервис</p>
-            <p>Высокий уровень сервиса и поддержки клиентов</p>
-          </li>
-          <li>
-            <p>Гибкая система оплаты</p>
-            <p>Предусмотрены скидки постоянным покупателям</p>
-          </li>
-          <li>
-            <p>Рекламная поддержка</p>
-            <p>Рекламные материалы в помощь партнерам</p>
-          </li>
-          <li>
-            <p>Консультирование</p>
-            <p>
-              Профессиональные консультации по вопросам выбора и использования
-            </p>
-          </li>
-          <li>
-            <p>Доставка</p>
-            <p>Регулярная доставка во все регионы Республики Беларусь</p>
-          </li>
-        </ul>
+        <div class="advantages">
+          <div class="centering-container">
+            <div class="advantages-preface">
+              <p id="advantages" class="advantages-heading">
+                10 лет успешной работы на белорусском рынке
+              </p>
+              <p>
+                Если вы выбираете нас в качестве партнера, то можете быть
+                уверены: это будет взаимовыгодное сотрудничество. За 10 лет
+                работы на рынке Республики Беларусь наша компания
+                зарекомендовала себя как надежный поставщик и на сегодняшний
+                день мы можем предложить своим клиентам следующее:
+              </p>
+            </div>
+            <ul class="advantages-list">
+              <li class="advantages-list-item">
+                <div class="advantage advantage-1">
+                  <div>
+                    <p class="advantage-name">Товар в наличии</p>
+                    <p class="advantage-detailed">
+                      Постоянное наличие товаров на складе
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantage advantage-2">
+                  <div>
+                    <p class="advantage-name">Товар в резерве</p>
+                    <p class="advantage-detailed">
+                      Резерв под потребности покупателей
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantage advantage-3">
+                  <div>
+                    <p class="advantage-name">Сервис</p>
+                    <p class="advantage-detailed">
+                      Высокий уровень сервиса и поддержки клиентов
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages-list-item fake"></li>
+              <li class="advantages-list-item">
+                <div class="advantage advantage-4">
+                  <div>
+                    <p class="advantage-name">Гибкая система оплаты</p>
+                    <p class="advantage-detailed">
+                      Предусмотрены скидки постоянным покупателям
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantage advantage-5">
+                  <div>
+                    <p class="advantage-name">Рекламная поддержка</p>
+                    <p class="advantage-detailed">
+                      Рекламные материалы в помощь партнерам
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantage advantage-6">
+                  <div>
+                    <p class="advantage-name">Консультирование</p>
+                    <p class="advantage-detailed">
+                      Профессиональные консультации по вопросам выбора и
+                      использования
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="advantages-list-item">
+                <div class="advantage advantage-7">
+                  <div>
+                    <p class="advantage-name">Доставка</p>
+                    <p class="advantage-detailed">
+                      Регулярная доставка во все регионы Республики Беларусь
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section>
-        <header>
-          <div><a>Контакты</a></div>
-          <div>
-            <ul>
-              <li><a href="tel:0">+375 17 513-08-96</a></li>
-              <li><a href="tel:0">+375 17 513-08-97</a></li>
-              <li><a href="tel:0">+375 44 76-76-000</a></li>
-            </ul>
+        <header class="separator">
+          <div class="centering-container">
+            <div class="separator-content-container">
+              <div class="separator-link-container">
+                <a class="separator__link" href="#contact-info">Контакты</a>
+                <i class="fa fa-arrow-circle-down fa-lg"></i>
+              </div>
+              <div>
+                <ul class="separator__numbers">
+                  <li>
+                    <a class="separator__number" href="tel:0"
+                      >+375 17 513-08-96</a
+                    >
+                  </li>
+                  <li class="extra">
+                    <a class="separator__number" href="tel:0"
+                      >+375 17 513-08-97</a
+                    >
+                  </li>
+                  <li class="extra">
+                    <a class="separator__number" href="tel:0"
+                      >+375 44 76-76-000</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </header>
-        <p></p>
-        <h2>ООО «БелОилгрупп»</h2>
-        <p>Официальный дистрибьютор TOTAL, UNIL, ARDECA</p>
-        <ul>
-          <li>
-            <h3>Телефоны</h3>
-            <ul>
-              <li><a href="tel:0">+375 17 513-08-96</a> (город)</li>
-              <li><a href="tel:0">+375 17 513-08-97</a> (факс)</li>
-              <li>
-                <ul>
-                  <li><a href="tel:0">+375 44 76-76-000</a></li>
-                  <li><a href="tel:0">76-76-455</a></li>
-                  <li><a href="tel:0">76-76-472</a> (Velcom)</li>
-                </ul>
-              </li>
-              <li>
-                <ul>
-                  <li><a href="tel:0">+375 29 507-66-11</a></li>
-                  <li><a href="tel:0">507-11-99</a></li>
-                  <li><a href="tel:0">+375 33 66-498-64</a> (МТС)</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>Адрес</h3>
-            <p>223021, Минский район, д. Озерцо, Менковский тракт, 14</p>
-          </li>
-          <li>
-            <h3>Email</h3>
-            <a href="mailto:info@beloilgroup.by">info@beloilgroup.by</a>
-          </li>
-        </ul>
-        <iframe
-          src="https://yandex.by/map-widget/v1/-/CBRkqBBatB"
-          width="560"
-          height="400"
-          frameborder="1"
-          allowfullscreen="true"
-        ></iframe>
+          <div class="contacts-map-container">
+            <div class="contacts-description-container">
+              <h2 id="contact-info">ООО «БелОилгрупп»</h2>
+              <p>Официальный дистрибьютор TOTAL, UNIL, ARDECA</p>
+              <ul class="all-contacts">
+                <li>
+                  <div class="contact-container">
+                    <i class="contact-icon fas fa-phone-square"></i>
+                    <div>
+                      <h3>Телефоны</h3>
+                      <ul class="phones-list">
+                        <li>
+                          <a class="contact-number" href="tel:0"
+                            >+375 17 513-08-96</a
+                          >
+                          (город)
+                        </li>
+                        <li>
+                          <a class="contact-number" href="tel:0"
+                            >+375 17 513-08-97</a
+                          >
+                          (факс)
+                        </li>
+                        <li>
+                          <ul>
+                            <li>
+                              <a class="contact-number" href="tel:0"
+                                >+375 44 76-76-000</a
+                              >
+                            </li>
+                            <li>
+                              <a class="contact-number" href="tel:0"
+                                >76-76-455</a
+                              >
+                            </li>
+                            <li>
+                              <a class="contact-number" href="tel:0"
+                                >76-76-472</a
+                              >
+                              (Velcom)
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul>
+                            <li>
+                              <a class="contact-number" href="tel:0"
+                                >+375 29 507-66-11</a
+                              >
+                            </li>
+                            <li>
+                              <a class="contact-number" href="tel:0"
+                                >507-11-99</a
+                              >
+                            </li>
+                            <li>
+                              <a class="contact-number" href="tel:0"
+                                >+375 33 66-498-64</a
+                              >
+                              (МТС)
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-container">
+                    <i class="contact-icon fas fa-map-marker-alt"></i>
+                    <div>
+                      <h3>Адрес</h3>
+                      <p>
+                        223021, Минский район, д. Озерцо, Менковский тракт, 14
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-container">
+                    <i class="contact-icon fas fa-envelope-square"></i>
+                    <div>
+                      <h3>Email</h3>
+                      <a href="mailto:info@beloilgroup.by"
+                        >info@beloilgroup.by</a
+                      >
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <iframe
+              class="map"
+              src="https://yandex.by/map-widget/v1/-/CBRkqBBatB"
+            >
+            </iframe>
+          </div>
       </section>
     </main>
-    <footer>
-      <div><a>Вверх</a></div>
-      <div>
-        <ul>
-          <li><a href="tel:0">+375 17 513-08-96</a></li>
-          <li><a href="tel:0">+375 17 513-08-97</a></li>
-          <li><a href="tel:0">+375 44 76-76-000</a></li>
-        </ul>
+    <footer class="separator">
+      <div class="centering-container">
+        <div class="separator-content-container">
+          <div class="separator-link-container">
+            <a class="separator__link" href="#head">Вверх</a>
+            <i class="fa fa-arrow-circle-up fa-lg"></i>
+          </div>
+          <div>
+            <ul class="separator__numbers">
+              <li>
+                <a class="separator__number" href="tel:0">+375 17 513-08-96</a>
+              </li>
+              <li class="extra">
+                <a class="separator__number" href="tel:0">+375 17 513-08-97</a>
+              </li>
+              <li class="extra">
+                <a class="separator__number" href="tel:0">+375 44 76-76-000</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
