@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circe"), url("CRC55.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-family: Circe, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.fa {
+  color: #ffffff;
+}
+
+.header {
+  background: url(images/header-bg.jpg) 100% 100% no-repeat;
+  color: #ffffff;
+}
+
+.header-description {
+  font-weight: 300;
+}
+
+.separator {
+  padding: 30px 0;
+  background-color: #00344f;
+  font-size: 20px;
+}
+
+.separator-content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.separator-link-container {
+  display: flex;
+  align-items: center;
+}
+
+.separator-link {
+  margin-right: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid;
+}
+
+.separator-numbers {
+  display: flex;
+}
+
+.separator-number {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.advantages {
+  background: url(images/features-bg.png) 100% 0 no-repeat;
+  background-size: 500px;
+}
+
+.advantages-heading {
+  padding: 40px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.advantages-preface {
+  max-width: 50%;
+  padding-bottom: 110px;
+}
+
+.advantage-name {
+  font-weight: 700;
+}
+
+.advantage-detailed {
+  color: #6b6d6f;
+  font-size: 14px;
+}
+
+.advantage {
+  display: flex;
+  padding-right: 30px;
+}
+
+.advantage::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  padding-right: 25px;
+  background-repeat: no-repeat;
+}
+
+.advantage-1::before {
+  background-image: url(images/a-1.png);
+}
+
+.advantage-2::before {
+  background-image: url(images/a-2.png);
+}
+
+.advantage-3::before {
+  background-image: url(images/a-3.png);
+}
+
+.advantage-4::before {
+  background-image: url(images/a-4.png);
+}
+
+.advantage-5::before {
+  background-image: url(images/a-5.png);
+}
+
+.advantage-6::before {
+  background-image: url(images/a-6.png);
+}
+
+.advantage-7::before {
+  background-image: url(images/a-7.png);
+}
+
+.advantages-list {
+  display: flex;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.advantages-list-item {
+  width: 25%;
+  padding-bottom: 50px;
+}
+
+.fake {
+  visibility: hidden;
+}
+
+.centering-container {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.contact-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-icon {
+  color: #ee3033;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.contact-number {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-number:hover {
+  text-decoration: underline;
+}
+
+.contacts-map-container {
+  display: flex;
+}
+
+.contacts-description-container {
+  padding-left: 10vw;
+  flex: 1;
+}
+
+.map {
+  flex: 1;
+  border: none;
+  min-height: 600px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.products-item {
+  background-color: #eeeeee;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.products-item:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+.products-item-summary {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.products-item-image {
+  width: 50%;
+  min-height: 225px;
+}
+
+.products-item-desc {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalogue-link {
+  cursor: pointer;
+  display:block;
+  color: #003f60;
+  padding-top: 5px;
+}
+
+.summary-paragraph {
+  padding: 10px 60px;
+}
+@media (max-width: 1170px) {
+  .products-item-image {
+    min-height: 0;
+    align-self: center;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .products {
+    flex-direction: column;
+  }
+
+  .advantages-preface {
+    max-width: 100%;
+  }
+
+  .advantages-list {
+    flex-direction: column;
+  }
+
+  .advantages-list-item {
+    width: 100%;
+  }
+
+  .fake {
+    display: none;
+  }
+
+  .contacts-map-container {
+    flex-direction: column;
+  }
+
+  .extra {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages {
+    background-image: none;
+  }
+}
