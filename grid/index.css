@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background: rgb(64, 64, 64);
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 1015px;
+  padding: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 25px);
+  grid-auto-rows: 25px;
+  grid-auto-flow: dense;
+  grid-gap: 5px;
+}
+
+.red {
+  background: rgb(245, 15, 15);
+}
+
+.yellow {
+  background: rgb(251, 228, 24);
+}
+
+.blue {
+  background: rgb(13, 127, 190);
+}
+
+.tom {
+  background: url(tom.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.white {
+  background: #ffffff;
+}
+
+.black {
+  background: #000000;
+}
+
+.c2 {
+  grid-column: span 2;
+}
+
+.c3 {
+  grid-column: span 3;
+}
+
+.c4 {
+  grid-column: span 4;
+}
+
+.c5 {
+  grid-column: span 5;
+}
+
+.c6 {
+  grid-column: span 6;
+}
+
+.c7 {
+  grid-column: span 7;
+}
+
+.c8 {
+  grid-column: span 8;
+}
+
+.r2 {
+  grid-row: span 2;
+}
+
+.r4 {
+  grid-row: span 4;
+}
+
+.r6 {
+  grid-row: span 6;
+}
+
+.r8 {
+  grid-row: span 8;
+}
